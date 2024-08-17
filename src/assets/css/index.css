@@ -1,0 +1,250 @@
+/*.banner_container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 5px 0;
+}
+.second_banner{
+  padding: 0 20px;
+}
+.deals_container{
+  margin:10px 0;
+}
+.deals_container img{
+  width: 100%;
+  object-fit: cover;
+}
+.deals{
+  margin: 0 10px;
+}
+.deals img{
+  width: 16.5%;
+  object-fit: cover;
+}
+.category_container{
+  margin:10px 0 ;
+}
+.category_container img{
+  width: 100%;
+  object-fit: cover;
+}
+.category{
+  margin: 0 10px;
+}
+.category img{
+  width: 20%;
+  object-fit: cover;
+}*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: content-box;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+  height: 80px;
+  width: 100%;
+  font-weight: 600;
+  border-bottom: 1px solid whitesmoke;
+}
+.logo_container {
+  margin-left: 2%;
+}
+.logo_container img {
+  width: 100%;
+  zoom: 0.3;
+}
+.nav_bar {
+  display: flex;
+  min-width: 500px;
+  width: 50%;
+  justify-content: space-evenly;
+  font-size: 12px;
+}
+.nav_bar a {
+  display: flex;
+  letter-spacing: 0.3;
+  align-items: center;
+  color: #282c3f;
+  text-decoration: none;
+}
+.nav_bar a sup {
+  color: rgb(240, 80, 133);
+}
+.nav_bar a:hover {
+  border-bottom: 4px solid rgb(176, 61, 168);
+  margin-top: 32px;
+  padding-bottom: 28px;
+}
+.search_bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 250px;
+  width: 40%;
+  border: solid 1;
+  border-radius: 4px;
+  background: #d2d2db;
+}
+.search_input {
+  height: 40px;
+  flex-grow: 1;
+  border: none;
+  background: #d2d2db;
+  border-radius: 4px;
+}
+.search_icon {
+  margin: 0px 5px;
+  zoom: 1.5;
+  box-sizing: content-box;
+}
+.action_bar {
+  display: flex;
+  margin: 0 20px;
+  min-width: 200px;
+  width: 15%;
+  justify-content: space-evenly;
+}
+.action_container {
+  border: none;
+  background: none;
+  padding: 0;
+}
+.action_container a {
+  color: #282c3f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 10px;
+}
+.action_icon {
+  zoom: 2;
+}
+.cart_pill {
+  zoom: 1.2;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  background-color: whitesmoke;
+  border-top: 1px solid whitesmoke;
+  font-weight: 600;
+}
+.footer a {
+  display: flex;
+  font-size: 14px;
+  color: #282c3f;
+  text-decoration: none;
+  align-items: center;
+}
+.online_shopping {
+  display: flex;
+  flex-direction: column;
+}
+.customer_policies {
+  display: flex;
+  flex-direction: column;
+}
+.items_container {
+  margin: 50px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.item_container {
+  border: 1px solid whitesmoke;
+  width: 20%;
+  margin: 10px;
+  border-radius: 20px;
+}
+.item_detail {
+  padding: 4px;
+}
+.item_image {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+.rating {
+  font-size: 12px;
+  font-weight: 700;
+}
+.company {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: #282c3f;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item_name {
+  color: #535766;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  display: block;
+}
+.price_container {
+  font-size: 14px;
+  line-height: 15px;
+  color: #282c3f;
+  white-space: nowrap;
+  margin-top: 8px;
+}
+.current_price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+}
+.original_price {
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.discount_percentage {
+  color: #ff905a;
+  text-wrap: stable;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 0px;
+}
+.btn_add_bag {
+  font-weight: 600;
+  width: 100%;
+  border-radius: 25px;
+  background: lightgreen;
+  box-shadow: none;
+  border: none;
+  margin-top: 2px;
+  padding: 2px 0 4px 0;
+}
+.btn_remove_bag {
+  font-weight: 600;
+  width: 100%;
+  border-radius: 25px;
+  background: lightcoral;
+  box-shadow: none;
+  border: none;
+  margin-top: 5px;
+  padding: 2px 0 4px 0;
+}
+.spinner {
+  margin: 150px 0px;
+}

@@ -1,32 +1,34 @@
-import { FaUserLarge } from "react-icons/fa6";
-import { FaRegHeart } from "react-icons/fa";
-import { FaCartShopping } from "react-icons/fa6";
+import { FaUserLarge, FaCartShopping, FaRegHeart } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 const Header = () => {
+  const bag = useSelector((store) => store.bag);
+
   return (
     <header>
       <div className="logo_container">
-        <a href="/#">
+        <Link to="/">
           <img
             className="myntra_logo"
             src="src/assets/images/logo-myntra-41466.png"
             alt="Myntra-logo"
           />
-        </a>
+        </Link>
       </div>
       <nav className="nav_bar">
-        <a href="/#">Men</a>
+        <Link to="/">Men</Link>
 
-        <a href="/#">Women</a>
+        <Link to="/">Women</Link>
 
-        <a href="/#">Kids</a>
+        <Link to="/">Kids</Link>
 
-        <a href="/#">home & living</a>
+        <Link to="/">home & living</Link>
 
-        <a href="/#">Beauty</a>
-        <a href="/#">
+        <Link to="/">beauty</Link>
+        <Link to="/">
           Studio <sup>New</sup>
-        </a>
+        </Link>
       </nav>
       <div className="search_bar">
         <CiSearch className="search_icon" />
@@ -51,10 +53,13 @@ const Header = () => {
           </a>
         </div>
         <div className="action_container">
-          <a href="/#">
+          <Link to="/bag" className="position-relative">
             <FaCartShopping className="action_icon" />
             Cart
-          </a>
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success cart_pill">
+              {bag.length}
+            </span>
+          </Link>
         </div>
       </div>
     </header>
