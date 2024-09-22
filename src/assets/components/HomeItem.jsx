@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { bagActions } from "../store redux/bagslice";
-import store from "../store redux";
+import { bagActions } from "../store redux/bagSlice";
 
 const HomeItem = ({ item }) => {
   const dispatch = useDispatch();
