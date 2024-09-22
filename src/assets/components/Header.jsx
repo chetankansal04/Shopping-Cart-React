@@ -47,12 +47,6 @@ const Header = () => {
           </a>
         </div>
         <div className="action_container">
-          <a href="/#">
-            <FaRegHeart className="action_icon" />
-            Wishlist
-          </a>
-        </div>
-        <div className="action_container">
           <Link to="/bag" className="position-relative">
             <FaCartShopping className="action_icon" />
             Cart

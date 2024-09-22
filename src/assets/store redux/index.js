@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import itemSlice from "./itemsSlice";
 import fetchStatusSlice from "./fetchStatusSlice";
-import bagSlice from "./bagslice";
+import bagSlice from "./bagSlice";
 
 const store = configureStore({
   reducer: {
